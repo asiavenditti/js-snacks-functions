@@ -27,3 +27,21 @@ console.log(initialList);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+
+// with Arrow function
+
+const getFirstLetter = (names) => {
+    let firstLetters = [];
+
+    for (let i = 0; i < names.length; i++) {
+        let singleName = names[i];
+        const initialLetters = singleName.charAt(0);
+        firstLetters.push(initialLetters);
+    }
+
+    return firstLetters;
+};
+
+const initialList = getFirstLetter(names);
+console.log(initialList); 

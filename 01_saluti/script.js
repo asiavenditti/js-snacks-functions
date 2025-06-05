@@ -20,3 +20,21 @@ const sayHi = greeting(userName);
 //Risultato atteso se si passa 'Mario': // ciao Mario
 
 console.log(sayHi);
+
+
+// with Arrow fucntion
+
+const getFirstLetter = (names) => {
+    let firstLetters = [];
+
+    for (let i = 0; i < names.length; i++) {
+        let singleName = names[i];
+        const initialLetters = singleName.charAt(0);
+        firstLetters.push(initialLetters);
+    }
+
+    return firstLetters;
+};
+
+const initialList = getFirstLetter(names);
+console.log(initialList); 

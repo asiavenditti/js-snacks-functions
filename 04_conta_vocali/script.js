@@ -34,3 +34,25 @@ const numberOfVowels = countVowels(word)
 console.log(numberOfVowels)
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
+
+
+// with Arrow function
+
+const word = 'javascript';
+
+const countVowels = (text) => {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    let vowelsOnly = [];
+
+    for (let i = 0; i < text.length; i++) {
+        const letter = text[i];
+        if (vowels.includes(letter)) {
+            vowelsOnly.push(letter);
+        }
+    }
+
+    return vowelsOnly.length;
+};
+
+const numberOfVowels = countVowels(word);
+console.log(numberOfVowels); 
