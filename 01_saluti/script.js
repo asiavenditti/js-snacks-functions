@@ -24,17 +24,10 @@ console.log(sayHi);
 
 // with Arrow fucntion
 
-const getFirstLetter = (names) => {
-    let firstLetters = [];
-
-    for (let i = 0; i < names.length; i++) {
-        let singleName = names[i];
-        const initialLetters = singleName.charAt(0);
-        firstLetters.push(initialLetters);
-    }
-
-    return firstLetters;
+const greeting = (name) => {
+    return `Ciao ${name}`;
 };
 
-const initialList = getFirstLetter(names);
-console.log(initialList); 
+const userName = 'Mario';
+const sayHi = greeting(userName);
+console.log(sayHi); 
